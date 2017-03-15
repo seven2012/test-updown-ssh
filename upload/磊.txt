@@ -1,0 +1,29 @@
+全局属性（Global attributes）
+specified on all HTML elements：
+accesskey：所有HTML元素都可以accesskey 设置内容属性。该accesskey属性的值所使用的用户代理作为创建一个快捷键激活或聚焦元素的指南。如果指定，该值必须 是区分大小写的唯一空格分隔令牌的有序集，每个都必须只有一个Unicode码点长度。
+class：每个HTML元素都可以指定一个class属性。该属性（如果指定）必须具有一个值，该值是表示元素所属的各种类。
+contenteditable：该contenteditable属性是一个 枚举属性，其关键字是空字符串，true和false。空字符串和true关键字映射到true状态。该false关键字映射到错误的状态。另外，还有第三个状态，继承状态，这是缺省值default（和无效值default）。
+dir：指定元素的文本方向性，with the following keywords and states:1，ltr关键字，它映射到LTR状态；表示元素的内容是明确方向隔离的从左到右的文本。2，The rtl keyword, which maps to the rtl state；Indicates that the contents of the element are explicitly directionally isolated right-to-left text.3，The auto keyword, which maps to the auto state；方向是使用元素的内容以编程方式确定的。
+hidden：所有HTML元素都可以hidden设置内容属性。该hidden属性是一个布尔属性。当在元素上指定时，它表示该元素还没有，或不再与页面的当前状态直接相关，或者它用于声明页面的其他部分重用的内容，而不是直接由用户访问。用户代理不应该呈现具有指定hidden属性的元素。这个要求可以通过样式层间接地实现。例如，HTML + CSS用户代理可以使用“渲染”部分中建议的规则实现这些要求。
+id：在一个文档中的唯一性，不可重复使用
+lang：指定元素的内容和任何包含文字元素的属性的主要语言
+spellcheck：该spellcheck属性是一个枚举属性，其关键字是空字符串，true和false。在真状态表示该元件是有其拼写和语法检查。在默认状态表明该元素是根据默认行为，可能基于父元素自身充当spellcheck如下定义的状态，。该假状态表示该元件不进行检查。
+style：所有HTML元素都可以style设置内容属性。
+tabindex:在tabindex内容属性允许创作者控制的元素是否应该成为焦点,属性（如果指定）必须具有为有效整数的值。负整数,不应允许使用顺序焦点导航到达该元素。如果值为零，允许使用顺序焦点导航到达该元素，并且应该遵循平台惯例来确定元素的相对顺序。
+如果值大于零，必须设置元素的tabindex焦点标志，应该允许使用顺序焦点导航到达该元素，并且应该将元素放置在顺序焦点导航顺序中。
+title：目标资源的标题或描述
+translate：指定Text在页面本地化时元素的属性值和其节点子节点的值是否要翻译，或者是否保留它们不变。属性的关键字是空字符串yes，和no。空字符串和yes关键字映射到 yes状态。该no关键字映射到没有状态。另外，还有第三个状态，继承状态，这是缺省值default（和无效值default）。
+data-*:自定义数据属性,每个HTML元素都可以指定任意数量的自定义数据属性，任何值。
+
+全局属性onafterprint，
+，onbeforeprint
+，onbeforeunload
+onhashchange
+onmessage
+onoffline
+ononline
+onpagehide
+onpageshow
+onpopstate
+onstorage
+onunload
